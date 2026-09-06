@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TABIBI - Login</title>
+    <link rel="icon" href="favicon.png" type="image/png">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="style-login-doctorProfile.css">
+</head>
+
+<body class="flex-wrapper">
+    <!-- Navbar -->
+    <div class="nav">
+
+        <a href="home.html" class="logo">
+            <img src="doctor.png" alt="logo">
+            <div class="name">Tabibi</div>
+        </a>
+
+        <!-- Menu Button -->
+        <div class="menu-btn" onclick="toggleMenu()">☰</div>
+
+        <div class="nav-links" id="navLinks">
+            <a href="home.html">Home</a>
+            <a href="find-doctor.html">Find Doctors</a>
+            <a href="about-page.html">About</a>
+            <button class="login" onclick="window.location.href='login.html'">Login</button>
+        </div>
+    </div>
+
+    <main class="login-wrapper container mt-auto">
+        <div class="login-header">
+            <div class="logo-icon-wrap login-logo-large">
+                <img src="doctor.png" alt="logo" width="32" height="32" style="filter: brightness(0) invert(1);">
+            </div>
+            <h1>Welcome Back</h1>
+            <p>Sign in to access your account</p>
+        </div>
+
+        <div class="login-card">
+            <form id="login-form">
+                <div class="form-group">
+                    <label>Email Address</label>
+                    <div class="input-wrap">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                            <polyline points="22,6 12,13 2,6" />
+                        </svg>
+                        <input type="email" placeholder="you@example.com" required>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label>Password</label>
+                    <div class="input-wrap">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="3" y="11" width="18" height="11" rx="2" ry="2" />
+                            <path d="M7 11V7a5 5 0 0 1 10 0v4" />
+                        </svg>
+                        <input type="password" placeholder="••••••••" required>
+                    </div>
+                </div>
+
+                <div class="form-actions">
+                    <label class="remember-me">
+                        <input type="checkbox">
+                        <span class="custom-checkbox"></span>
+                        Remember me
+                    </label>
+                    <a href="#" class="forgot-pwd">Forgot password?</a>
+                </div>
+
+                <button type="submit" class="btn btn-signin">Sign In</button>
+
+                <p class="create-account">
+                    Don't have an account? <a href="#">Create Account</a>
+                </p>
+            </form>
+        </div>
+
+        <p class="terms-note">By signing in, you agree to our Terms of Service and Privacy Policy</p>
+    </main>
+
+    <footer class="mt-auto">
+        <div class="container footer-grid">
+            <div class="footer-col">
+                <div class="logo logo-white" style="cursor: pointer;"onclick="window.location.href='home.html'">
+                    <div class="logo-icon-wrap" >
+                        <img class="logo-img-f" src="img/logo.png" alt="">
+                    </div>
+                    <span class="tabibi">
+                        Tabibi 
+                    </span>
+                </div>
+                <p class="footer-desc">Your trusted platform for easy and convenient doctor appointments.</p>
+            </div>
+
+            <div class="footer-col">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="find-doctor.html">Find Doctors</a></li>
+                    <li><a href="about-page.html">About Us</a></li>
+                    <li><a href="login.html">Login</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h3>Contact</h3>
+                <ul>
+                    <li>Email: support@tabibi.com</li>
+                    <li>Phone: +1 (555) 123-4567</li>
+                    <li>Available 24/7</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            &copy; 2026 TABIBI. All rights reserved.
+        </div>
+    </footer>
+    <script src="login-doctorProfile.js"></script>
+    <script>
+        function toggleMenu() {
+            document.getElementById("navLinks").classList.toggle("active");
+        }
+    </script>
+</body>
+
+</html>

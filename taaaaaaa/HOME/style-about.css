@@ -1,0 +1,372 @@
+:root {
+  --primary: #153c33;
+  --bg-color: #f7f9fa;
+  --orange: #f28c54;
+  --text-main: #2b3941;
+  --text-light: #7b8a96;
+  --border-color: #eaeef1;
+}
+
+
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: #f5f5f5;
+        }
+
+        /* Navbar */
+        .nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 60px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+            z-index: 1000;
+        }
+
+        /* Logo */
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            text-decoration: none;
+        }
+
+        .logo:hover .name {
+            color: #0f3d3eb0;
+        }
+
+        .logo img {
+            width: 35px;
+            height: 35px;
+            background: #0F3D3E;
+            border-radius: 10px;
+            object-fit: contain;
+        }
+
+        .name {
+            font-weight: bold;
+            font-size: 20px;
+            color: #0F3D3E;
+        }
+
+        /* Links */
+        .nav-links {
+            display: flex;
+            gap: 30px;
+            align-items: center;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color:#0f3d3ebc;
+            font-size: 14px;
+            transition: 0.3s;
+        }
+        .nav-links .home {
+            color: #0F3D3E;
+            font-weight: bold;
+        }
+
+        .nav-links a:hover {
+            color:#0F3D3E;
+        }
+
+        .login {
+            background: #F4A261;
+            border: none;
+            padding: 8px 16px;
+            border-radius: 8px;
+            color: white;
+            cursor: pointer;
+        }
+        .login:hover {
+            background: #f4a361cc;
+            
+        }
+
+
+        /* Menu Button (Hidden Desktop) */
+        .menu-btn {
+            display: none;
+            font-size: 22px;
+            cursor: pointer;
+        }
+
+
+
+
+/* ============================================================= */
+.upper{
+    background-color: #1B4546;
+    text-align: center;
+    padding: 80px;
+    color: white;
+}
+
+.upper h2{
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.upper h5{
+    font-weight: 200;
+    letter-spacing: 2px;
+
+}
+
+
+.card{
+    padding: 40px;
+    border: none;
+ box-shadow:
+  -9px 8px 6px -4px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+}
+.card img{
+    width: 60px;
+    border-radius: 10px;
+}
+
+.third{
+    margin-top: 150px;
+}
+
+.third p{
+    margin-top: 30px;
+    font-size: 18px;
+    line-height: 35px;
+}
+
+.third img{
+    border-radius: 40px;
+    width: 600px;
+    margin-left: 30px;
+}
+.forth{
+    background-color: #F8F9FA;
+    padding: 120px;
+    text-align: center;
+}
+.forth h2{
+    font-weight: bold;
+}
+
+.forth .card-title{
+    font-size: 45px;
+}
+
+.upper h3{
+    font-size: 40px;
+}
+
+.upper .card{
+    background-color: #375A5C !important;
+    color: white;
+    letter-spacing: 1px;
+    text-align: left !important;
+    font-size: 14px;
+    margin-top: 30px;
+    
+}
+.card .card-title{
+    font-weight: 600;
+}
+
+.upper .card{
+    padding: 5px;
+     padding: 20px;
+}
+
+.upper img{
+    width: 40px;
+   
+}
+
+
+
+
+
+
+.logo-icon-wrap {
+  background: var(--primary);
+  width: 90px;
+  margin-right: -20px;
+  height: 44px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: scale(1.9);
+  background-color: transparent;
+}
+
+
+.tabibi {
+  font-weight: 700;
+  font-size: 1.5rem;
+  margin-right: 10px;
+}
+
+
+
+
+.container {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 0 30px !important;
+}
+
+footer {
+  background: linear-gradient(to right, #0F3D3E, #145A5C);
+  color: white;
+  padding-top: 64px;
+  text-align: left;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  gap: 64px;
+  padding-bottom: 48px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.logo-white {
+  color: white;
+  margin-bottom: 16px;
+}
+
+.bg-orange {
+  background: var(--orange);
+}
+
+
+
+
+
+.footer-desc {
+  color: #b2c2bc;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  max-width: 300px;
+}
+
+.footer-col h3 {
+  font-size: 1.05rem;
+  margin-bottom: 24px;
+  font-weight: 600;
+  color: white;
+}
+
+.footer-col ul {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-col ul li {
+  color: #b2c2bc;
+  font-size: 0.95rem;
+}
+
+.footer-col ul a {
+  color: #b2c2bc;
+  text-decoration: none;
+  font-size: 0.95rem;
+}
+
+.footer-col ul a:hover {
+  color: var(--orange);
+}
+
+.footer-bottom {
+  text-align: center;
+  padding: 24px 0;
+  color: #b2c2bc;
+  font-size: 0.9rem;
+}
+
+
+
+
+
+@media (max-width: 900px) {
+  .layout {
+    grid-template-columns: 1fr;
+  }
+
+  .nav-links {
+    display: none;
+  }
+}
+
+
+
+ @media (max-width: 768px) {
+
+            .nav {
+                padding: 15px 20px;
+            }
+
+            .menu-btn {
+                display: block;
+                margin-right: 15px;
+            }
+
+            .nav-links {
+                position: absolute;
+                top: 70px;
+                right: 0;
+                background: white;
+                width: 100%;
+                flex-direction: column;
+                align-items: center;
+                gap: 20px;
+                padding: 20px 0;
+                display: none;
+            }
+
+            .nav-links.active {
+                display: flex;
+                
+                
+            }
+
+            .sec1 {
+                flex-direction: column;
+                text-align: center;
+                padding: 60px 20px;
+            }
+          
+
+            .search-box {
+                flex-direction: column;
+            }
+
+            .footer-grid {
+                grid-template-columns: 1fr;
+                gap: 32px;
+            }
+
+            .forth {
+                padding: 60px 20px;
+            }
+
+            .card {
+                padding: 20px;
+            }
+        }
